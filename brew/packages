@@ -21,6 +21,7 @@ google-drive
 hyperkey
 icu4c
 iina
+jq
 libevent
 libgit2
 libgit2@1.7
@@ -28,6 +29,7 @@ libnghttp2
 libssh2
 libuv
 libvterm
+libzip
 llvm
 lpeg
 luajit
@@ -42,6 +44,7 @@ neovim
 node
 notion
 obsidian
+oniguruma
 openssl@3
 pipx
 pkg-config
