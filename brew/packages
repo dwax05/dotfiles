@@ -1,4 +1,5 @@
 alt-tab
+arc
 brotli
 c-ares
 ca-certificates
@@ -12,6 +13,7 @@ font-fontawesome
 font-jetbrains-mono
 font-jetbrains-mono-nerd-font
 fzf
+geekbench
 gettext
 gh
 github
@@ -46,8 +48,10 @@ notion
 obsidian
 oniguruma
 openssl@3
+parsec
 pipx
 pkg-config
+prismlauncher
 python-setuptools
 python@3.12
 raycast
@@ -59,6 +63,7 @@ spotify
 sqlite
 starship
 stats
+steam
 stow
 sublime-text
 tldr
@@ -72,6 +77,7 @@ wezterm
 whisky
 xz
 z3
+zed
 zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting
