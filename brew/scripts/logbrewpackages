@@ -1,0 +1,42 @@
+#!/bin/sh
+
+PACKAGES_FILE="../packages"
+TEMP_FILE="tmp.txt"
+
+# Check if Homebrew is installed
+if ! command -v brew &> /dev/null
+then
+    echo "Homebrew is not installed. Please install it first."
+    exit 1
+fi
+
+{
+    brew list --formulae
+    brew list --casks
+} | xargs -n1 > $TEMP_FILE
+
+# Check if the packages file exists, if not, create it
+if [ ! -f "$PACKAGES_FILE" ]; then
+    touch "$PACKAGES_FILE"
+    echo "Created new packages file: $PACKAGES_FILE"
+fi
+
+# Compare the current packages with the old ones and prompt for confirmation
+while read -r package; do
+    if ! grep -q "^$package$" "$PACKAGES_FILE"; then
+        # Prompt the user to confirm adding the package
+        read -p "Add new package $package to $PACKAGES_FILE? (y/n) " answer
+        case "$answer" in
+            [Yy]* ) echo "$package" >> "$PACKAGES_FILE";;
+            * ) echo "Skipped $package";;
+        esac
+    fi
+done < $TEMP_FILE
+
+# Sort the packages file
+sort -o $PACKAGES_FILE $PACKAGES_FILE
+
+# Clean up temporary file
+rm $TEMP_FILE
+
+echo "Successfully logged Homebrew Packages"

@@ -34,17 +34,11 @@ shadafile="$HOME/.config/vim/viminfo"
 
 MANPAGER="batman"
 
-BUN_INSTALL="$HOME/.local/share/bun"
-[ -d "$BUN_INSTALL/bin" ] && export PATH="$PATH:$BUN_INSTALL/bin"
-
 [ -d "$HOME/.local/bin" ] && export PATH="$PATH:$HOME/.local/bin"
 [ -d "$HOME/.cargo/bin" ] && export PATH="$PATH:$HOME/.cargo/bin"
 [ -d "$HOME/go/bin" ] && export PATH="$PATH:$HOME/go/bin"
-[ -d "$HOME/.config/emacs/bin" ] && export PATH="$PATH:$HOME/.config/emacs/bin"
 [ -d "/opt/gradle/gradle-8.4/bin" ] && export PATH="$PATH:/opt/gradle/gradle-8.4/bin"
-
-# bun completions
-[ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
+[ -d "$HOME/.config/brew/scripts" ] && export PATH="$PATH:$HOME/.config/brew/scripts"
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bindsrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bindsrc"
