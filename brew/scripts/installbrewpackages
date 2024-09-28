@@ -22,22 +22,22 @@ while read -r package; do
     fi
 
     # Check if the package is in the ignore file
-    if grep -q "^$package$" "$IGNORE_FILE"; then
+    if rg -q "^$package$" "$IGNORE_FILE"; then
         continue # Skip ignored packages
     fi
 
     # Check if the package is already installed as a formula
-    if brew list --formula | grep -q "^$package$"; then
+    if brew list --formula | rg -q "^$package$"; then
         echo "$package is already installed as a formula."
     # Check if the package is already installed as a cask
-    elif brew list --cask | grep -q "^$package$"; then
+    elif brew list --cask | rg -q "^$package$"; then
         echo "$package is already installed as a cask."
     else
         # Check if it's a formula or cask and install accordingly
-        if brew search --formula "^$package$" | grep -q "^$package$"; then
+        if brew search --formula "^$package$" | rg -q "^$package$"; then
             echo "Installing formula $package..."
             brew install "$package"
-        elif brew search --cask "^$package$" | grep -q "^$package$"; then
+        elif brew search --cask "^$package$" | rg -q "^$package$"; then
             echo "Installing cask $package..."
             brew install --cask "$package"
         else

@@ -10,7 +10,7 @@ vim.g.startup_bookmarks = {
   ['C'] = "~/Workspace/Dylan's Idea Galaxy/COP2332/Code",
 }
 
-vim.keymap.set('n', '<leader>.', '<cmd>Ex<CR>', { desc = 'Open Ex Browser' })
+vim.keymap.set('n', '<leader>pv', '<cmd>Ex<CR>', { desc = 'Open Ex Browser' })
 vim.keymap.set('n', '<leader>cf', '<cmd>cd %:h <CR>', { desc = 'Set File Location As Working Dir' })
 vim.keymap.set('n', '<leader>gx', '<cmd>:! open .<CR><CR>', { desc = 'Open current directory in Finder' })
 
@@ -37,4 +37,5 @@ return {
     end,
   },
   { 'akinsho/toggleterm.nvim', version = '*', config = true },
+  { 'ThePrimeagen/vim-be-good' },
 }

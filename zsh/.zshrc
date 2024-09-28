@@ -8,3 +8,5 @@ export ZDOTDIR="$HOME/.config/zsh"
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
