@@ -30,12 +30,15 @@ export LESSHISTFILE="${XDG_CONFIG_HOME:-$HOME/.cache}/less/history"
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export FZF_DEFAULT_OPTS="--history-size=20000"
 
+export GOPATH="$HOME/.go"
+
 shadafile="$HOME/.config/vim/viminfo"
 
 MANPAGER="batman"
 
 [ -d "$HOME/.local/bin" ] && export PATH="$PATH:$HOME/.local/bin"
 [ -d "$HOME/.cargo/bin" ] && export PATH="$PATH:$HOME/.cargo/bin"
+[ -d "$HOME/.go/bin" ] && export PATH="$PATH:$HOME/.go/bin"
 [ -d "$HOME/go/bin" ] && export PATH="$PATH:$HOME/go/bin"
 [ -d "/opt/gradle/gradle-8.4/bin" ] && export PATH="$PATH:/opt/gradle/gradle-8.4/bin"
 [ -d "$HOME/.config/brew/scripts" ] && export PATH="$PATH:$HOME/.config/brew/scripts"

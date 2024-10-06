@@ -11,12 +11,14 @@ cfitsio
 cgif
 chafa
 cheatsheet
+cinebench
 cjson
 cli11
 cmake
 cpp-gsl
 dav1d
 discord
+docker
 dolphin
 epic-games
 eza
@@ -114,6 +116,7 @@ mpg123
 msgpack
 mullvadvpn
 neovim
+netnewswire
 nettle
 node
 notion
@@ -125,6 +128,7 @@ openexr
 openjpeg
 openssl@3
 opus
+orion
 p11-kit
 pango
 pcre2
@@ -132,6 +136,7 @@ pipx
 pixman
 pkg-config
 pmix
+pngpaste
 prismlauncher
 python-packaging
 python-setuptools
@@ -165,6 +170,7 @@ tree-sitter
 unbound
 unibilium
 vscodium
+wallpaper
 webp
 wezterm
 whisky
@@ -173,6 +179,7 @@ x265
 xorgproto
 xvid
 xz
+yarn
 zed
 zen-browser
 zeromq
