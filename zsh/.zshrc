@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export ZDOTDIR="$HOME/.config/zsh"
-. "$ZDOTDIR/.zshenv"
+. "$ZDOTDIR/../shell/env"
 . "$ZDOTDIR/.zplugins"
 . "$ZDOTDIR/.fzf.zsh"
 

@@ -34,11 +34,11 @@ export GOPATH="$HOME/.go"
 
 shadafile="$HOME/.config/vim/viminfo"
 
-export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
 [ -d "$HOME/.local/bin" ] && export PATH="$PATH:$HOME/.local/bin"
 [ -d "$HOME/.cargo/bin" ] && export PATH="$PATH:$HOME/.cargo/bin"
 [ -d "$HOME/.go/bin" ] && export PATH="$PATH:$HOME/.go/bin"
 [ -d "$HOME/.config/brew/scripts" ] && export PATH="$PATH:$HOME/.config/brew/scripts"
+[ -f "/opt/homebrew" ] && export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bindsrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/bindsrc"
