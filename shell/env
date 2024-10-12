@@ -32,8 +32,6 @@ export FZF_DEFAULT_OPTS="--history-size=20000"
 
 export GOPATH="$HOME/.go"
 
-shadafile="$HOME/.config/vim/viminfo"
-
 [ -d "$HOME/.local/bin" ] && export PATH="$PATH:$HOME/.local/bin"
 [ -d "$HOME/.cargo/bin" ] && export PATH="$PATH:$HOME/.cargo/bin"
 [ -d "$HOME/.go/bin" ] && export PATH="$PATH:$HOME/.go/bin"
