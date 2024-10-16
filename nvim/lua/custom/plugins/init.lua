@@ -8,6 +8,7 @@
 vim.g.startup_bookmarks = {
   -- ['C'] = "/Users/dylanwax/Library/Mobile Documents/iCloud~md~obsidian/Documents/Dylan's Idea Galaxy/COP2332/Code",
   ['C'] = "~/Workspace/Dylan's Idea Galaxy/COP2332/Code",
+  ['N'] = '~/Library/Mobile Documents/iCloud~md~obsidian/Documents/ZettleKasten',
 }
 
 vim.keymap.set('n', '<leader>pv', '<cmd>Ex<CR>', { desc = 'Open Ex Browser' })
