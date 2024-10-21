@@ -10,13 +10,13 @@ certifi
 cfitsio
 cgif
 chafa
-cheatsheet
 cinebench
 cjson
 cli11
 cmake
 cpp-gsl
 dav1d
+diffusionbee
 discord
 docker
 dolphin
@@ -40,6 +40,7 @@ gdk-pixbuf
 geekbench
 gettext
 gh
+ghostscript
 giflib
 github
 glib
@@ -47,17 +48,23 @@ gmp
 gnu-sed
 gnutls
 go
+godot
 google-chrome
+google-cloud-sdk
 google-drive
 graphite2
 harfbuzz
+heroic
 highway
 hwloc
 hyperkey
 icu4c
+icu4c@75
 iina
 imath
 isl
+jbig2dec
+jordanbaird-ice
 jpeg-turbo
 jpeg-xl
 jq
@@ -68,8 +75,10 @@ libass
 libavif
 libb2
 libbluray
+libdeflate
 libevent
 libgit2
+libidn
 libidn2
 libmicrohttpd
 libmpc
@@ -109,6 +118,8 @@ luv
 lz4
 lzo
 mac-cleanup-py
+mactex
+mathpix-snipping-tool
 mbedtls
 miniupnpc
 mpdecimal
@@ -121,6 +132,7 @@ nettle
 node
 notion
 obsidian
+ollama
 oniguruma
 open-mpi
 opencore-amr
@@ -130,6 +142,7 @@ openssl@3
 opus
 orion
 p11-kit
+pandoc
 pango
 pcre2
 pipx
@@ -139,8 +152,8 @@ pmix
 pngpaste
 prismlauncher
 python-packaging
-python-setuptools
 python@3.12
+python@3.13
 rav1e
 raycast
 readline
@@ -148,6 +161,7 @@ rubberband
 rust
 sdl2
 setapp
+sevenzip
 slimhud
 snappy
 speex
@@ -157,6 +171,7 @@ srt
 starship
 stats
 steam
+stow
 sublime-text
 svt-av1
 tesseract
@@ -172,6 +187,7 @@ vscodium
 wallpaper
 webp
 wezterm
+wget
 whisky
 x264
 x265
