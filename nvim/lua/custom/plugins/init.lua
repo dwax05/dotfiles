@@ -7,7 +7,7 @@
 -- vim.opt.autochdir = true
 vim.g.startup_bookmarks = {
   -- ['C'] = "/Users/dylanwax/Library/Mobile Documents/iCloud~md~obsidian/Documents/Dylan's Idea Galaxy/COP2332/Code",
-  ['C'] = "~/Workspace/Dylan's Idea Galaxy/COP2332/Code",
+  ['C'] = '~/Developer/cop2332',
   ['N'] = '~/Library/Mobile Documents/iCloud~md~obsidian/Documents/ZettleKasten',
 }
 
