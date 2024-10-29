@@ -110,7 +110,6 @@ alias \
 	lg="lazygit" \
 	sdn="shutdown -h now" \
 	v="$EDITOR" \
-	z="zoxide"
 
 alias \
 	gitc="git clone"

@@ -39,4 +39,8 @@ return {
   },
   { 'akinsho/toggleterm.nvim', version = '*', config = true },
   { 'ThePrimeagen/vim-be-good' },
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+  },
 }
